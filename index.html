@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,46 +15,68 @@
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Courses</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
     </nav>
 
-    <main class="container">
+    <main class="container" id="home">
+
+        <section class="about" id="about">
+            <h2>About My Website</h2>
+            <p>
+                Welcome to my website!
+                I am learning HTML, CSS, and JavaScript.
+            </p>
+        </section>
+
+        <h2 id="courses">My Web Development Topics</h2>
+
         <div class="card">
-            <h2>HTML</h2>
+            <h3>HTML</h3>
             <p>HTML creates the structure of a website.</p>
         </div>
-<h2>My Web Development Topics</h2>
 
-<div id="topicsContainer"></div>
-<button id="countButton">Count Topics</button>
-<p id="countMessage"></p>
-<input
-    type="text"
-    id="newTopicInput"
-    placeholder="Enter a new topic"
->
-
-<button id="addTopicButton">Add Topic</button>
-
-<p id="topicMessage"></p>
         <div class="card">
-            <h2>CSS</h2>
+            <h3>CSS</h3>
             <p>CSS styles and designs a website.</p>
         </div>
 
         <div class="card">
-            <h2>JavaScript</h2>
+            <h3>JavaScript</h3>
             <p>JavaScript makes a website interactive.</p>
         </div>
-        
-<<input id="nameInput" type="text" placeholder="Enter your name">
 
-<button id="greetButton">Greet Me</button>
+        <h2>My Topics List</h2>
+        <div id="topicsContainer"></div>
 
-<p id="greeting"></p>
+        <button id="countButton">Count Topics</button>
+        <p id="countMessage"></p>
+
+        <input
+            type="text"
+            id="newTopicInput"
+            placeholder="Enter a new topic"
+        >
+
+        <button id="addTopicButton">Add Topic</button>
+        <p id="topicMessage"></p>
+
+        <h2>Greeting</h2>
+        <input
+            id="nameInput"
+            type="text"
+            placeholder="Enter your name"
+        >
+
+        <button id="greetButton">Greet Me</button>
+        <p id="greeting"></p>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Welcome to my learning website.</p>
+        </section>
 
     </main>
 
@@ -62,11 +84,7 @@
         <p>My First Responsive Website</p>
     </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-<input id="nameInput" type="text" placeholder="Enter your name">
-
-<button id="greetButton">Greet Me</button>
-
-<p id="greeting"></p>
+```
