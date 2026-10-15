@@ -4,206 +4,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dursaa - My Personal Website</title>
+    <title>Dursa | Software Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <header>
-        <h1>My Learning Website</h1>
-        <p>Learn Web Designing and Programming</p>
-    </header>
-
+<header class="topbar">
+    <a class="brand" href="#home">DURSA</a>
     <nav>
-        <a href="#home" class="home-link">Home</a>
-        <a href="#courses" class="home-link">Courses</a>
-        <a href="#contact" class="home-link">Contact Me</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#social">Social</a>
+        <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <main class="container">
+<main>
+    <!-- PAGE 1: PROFILE -->
+    <section id="home" class="page hero">
+        <div class="profile-card">
+            <div class="cover"></div>
 
-        <!-- PAGE 1: INTRODUCTION -->
-        <section id="homePage" class="page active">
+           <img src="images/my_photo.jpg"
+                 alt="My personal photo"
+                 class="profile-photo">
 
-            <section class="about" id="home">
-                <img
-    src="images/my-photo.jpg"
-    alt="My personal photo"
-    class="profile-photo"
->
+            <h1>Dursa Lechisa </h1>
+            <p class="subtitle">Software Engineering Student</p>
 
-                <p class="subtitle">WELCOME TO MY WEBSITE</p>
-                <h2>Hello, I am Dursaa!</h2>
-
-                <p>
-                    Welcome to my personal website.
-                    I am a student learning web designing
-                    and programming. I want to improve my
-                    knowledge, develop useful skills, and
-                    achieve my future goals.
-                </p>
-            </section>
-
-            <h2 id="courses">My Web Development Topics</h2>
-
-            <div class="cards-grid">
-                <div class="card">
-                    <h3>HTML</h3>
-                    <p>HTML creates the structure of a website.</p>
-                </div>
-
-                <div class="card">
-                    <h3>CSS</h3>
-                    <p>CSS styles and designs a website.</p>
-                </div>
-
-                <div class="card">
-                    <h3>JavaScript</h3>
-                    <p>JavaScript makes a website interactive.</p>
-                </div>
+            <div class="student-info">
+                <p><strong>Department:</strong> Software Engineering</p>
+                <p><strong>Year:</strong> 3rd Year</p>
+                <p><strong>Academic Year:</strong> 2019 E.C.</p>
+                <p><strong>University:</strong> Bule Hora University</p>
             </div>
 
-            <div class="next-area">
-                <p>Would you like to know more about me?</p>
-                <button id="nextButton">Next →</button>
-            </div>
-
-            <!-- EXISTING JAVASCRIPT PRACTICE -->
-            <section class="practice">
-                <h2>My Topics List</h2>
-                <div id="topicsContainer"></div>
-
-                <button id="countButton">Count Topics</button>
-                <p id="countMessage"></p>
-
-                <input
-                    type="text"
-                    id="newTopicInput"
-                    placeholder="Enter a new topic"
-                >
-
-                <button id="addTopicButton">Add Topic</button>
-                <p id="topicMessage"></p>
-
-                <h2>Greeting</h2>
-                <input
-                    id="nameInput"
-                    type="text"
-                    placeholder="Enter your name"
-                >
-
-                <button id="greetButton">Greet Me</button>
-                <p id="greeting"></p>
-            </section>
-
-            <!-- CONTACT FORM -->
-            <section id="contact" class="contact-section">
-                <h2>Contact Me</h2>
-                <p>You can send me a message using this form.</p>
-
-                <form
-                    action="https://formsubmit.co/dursalechisa50@gmail.com"
-                    method="POST"
-                >
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New message from my website"
-                    >
-
-                    <label for="visitorName">your name </label>
-                    <input
-                        id="visitorName"
-                        type="text"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                    >
-
-                    <label for="visitorEmail">dursalechisa50@gmail.com/label>
-                    <input
-                        id="visitorEmail"
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                    <label for="visitorMessage">Your Message</label>
-                    <textarea
-                        id="visitorMessage"
-                        name="message"
-                        rows="5"
-                        placeholder="Write your message here"
-                        required
-                    ></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
-
-        </section>
-
-        <!-- PAGE 2: PERSONAL PROFILE -->
-        <section id="profilePage" class="page">
-
-            <h1>My Personal Profile</h1>
-            <p class="profile-intro">
-                My department, vision, mission, and goals.
+            <p class="intro">
+                Hello! Welcome to my first personal website.
+                I am a Software Engineering student who enjoys
+                learning technology, designing websites, and
+                developing useful software for the future.
             </p>
 
-            <div class="profile-grid">
+            <button class="primary-btn" id="nextButton">
+                NEXT →
+            </button>
+        </div>
+    </section>
 
-                <article class="profile-card">
-                    <h2>My Department</h2>
-                    <p>
-                        I am studying in the Department of
-                        <strong>[Your Department]</strong>.
-                        I want to gain knowledge and develop
-                        professional skills in my field.
-                    </p>
-                </article>
+    <!-- PAGE 2: ABOUT ME -->
+    <section id="about" class="page content-section" hidden>
+        <h2>About Me</h2>
+        <p class="section-intro">
+            My journey, vision, mission, and goals.
+        </p>
 
-                <article class="profile-card">
-                    <h2>My Vision</h2>
-                    <p>
-                        My vision is to become a successful
-                        and skilled professional who uses
-                        knowledge to make a positive difference.
-                    </p>
-                </article>
+        <div class="info-grid">
+            <article class="info-card">
+                <h3>My Vision</h3>
+                <p>
+                    To become a successful software engineer
+                    who uses technology to solve real problems
+                    and make a positive difference.
+                </p>
+            </article>
 
-                <article class="profile-card">
-                    <h2>My Mission</h2>
-                    <p>
-                        My mission is to learn continuously,
-                        work hard, improve my skills, and
-                        use what I learn to solve problems.
-                    </p>
-                </article>
+            <article class="info-card">
+                <h3>My Mission</h3>
+                <p>
+                    To learn continuously, practice programming,
+                    improve my skills, and create useful,
+                    reliable software.
+                </p>
+            </article>
 
-                <article class="profile-card">
-                    <h2>My Goals</h2>
-                    <ul>
-                        <li>Complete my education successfully.</li>
-                        <li>Improve my programming skills.</li>
-                        <li>Build useful websites and projects.</li>
-                        <li>Prepare for my future career.</li>
-                    </ul>
-                </article>
+            <article class="info-card">
+                <h3>My Goals</h3>
+                <ul>
+                    <li>Improve my web development skills.</li>
+                    <li>Build useful software projects.</li>
+                    <li>Learn backend and databases.</li>
+                    <li>Become a skilled software engineer.</li>
+                </ul>
+            </article>
+        </div>
 
-            </div>
+        <div class="page-buttons">
+            <button class="secondary-btn" id="backButton">
+                ← BACK
+            </button>
+            <button class="primary-btn" id="socialButton">
+                NEXT →
+            </button>
+        </div>
+    </section>
 
-            <button id="backButton">← Back</button>
+    <!-- PAGE 3: SOCIAL MEDIA CARDS -->
+    <section id="social" class="page content-section" hidden>
+        <h2>My Social & Favorite Platforms</h2>
+        <p class="section-intro">
+            Explore my favorite online platforms.
+        </p>
 
-        </section>
+        <div class="social-grid">
+            <a class="social-card youtube"
+               href="https://www.youtube.com/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">▶</span>
+                <h3>YouTube</h3>
+                <p>Learning and entertainment videos.</p>
+                <span class="card-link">Visit platform ↗</span>
+            </a>
 
-    </main>
+            <a class="social-card tiktok"
+               href="https://www.tiktok.com/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">♪</span>
+                <h3>TikTok</h3>
+                <p>Short videos and creative content.</p>
+                <span class="card-link">Visit platform ↗</span>
+            </a>
 
-    <footer>
-        <p>© 2026 Dursaa | My Personal Website</p>
-    </footer>
+            <a class="social-card movies"
+               href="https://www.imdb.com/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">🎬</span>
+                <h3>Movies</h3>
+                <p>Discover movies and entertainment.</p>
+                <span class="card-link">Explore movies ↗</span>
+            </a>
+   
+            <a class="social-card facebook"
+               href="https://www.facebook.com/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">f</span>
+                <h3>Facebook</h3>
+                <p>Connect and share with others.</p>
+                <span class="card-link">Visit platform ↗</span>
+            </a>
+        
 
-    <script src="script.js"></script>
+            <a class="social-card telegram"
+               href="https://telegram.org/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">➤</span>
+                <h3>Telegram</h3>
+                <p>Messaging and communication.</p>
+                <span class="card-link">Visit platform ↗</span>
+            </a>
+            <a class="social-card facebook"
+               href="https://www.Dursaa.com/"
+               target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">DL</span>
+                <h3>Dursa </h3>
+                <p>Connect and share with others.</p>
+                <span class="card-link">Visit platform ↗</span>
+            </a>
+        </div>
+
+        <div class="page-buttons">
+            <button class="secondary-btn" id="aboutButton">
+                ← BACK
+            </button>
+            <button class="primary-btn" id="contactButton">
+                NEXT → CONTACT
+            </button>
+        </div>
+    </section>
+
+    <!-- PAGE 4: CONTACT FORM -->
+    <section id="contact" class="page content-section" hidden>
+        <h2>Contact Me</h2>
+        <p class="section-intro">
+            Have a question or suggestion? Send me a message.
+        </p>
+
+        <form id="contactForm"
+              action="https://formsubmit.co/dursalechisa50@gmail.com"
+              method="POST">
+
+            <input type="hidden" name="_subject"
+                   value="New message from my portfolio website">
+
+            <input type="hidden" name="_template"
+                   value="table">
+
+            <label for="visitorName">Your Name</label>
+            <input id="visitorName" type="text"
+                   name="name" placeholder="Enter your name"
+                   required>
+
+            <label for="visitorEmail">Your Email</label>
+            <input id="visitorEmail" type="email"
+                   name="email" placeholder="Enter your email"
+                   required>
+
+            <label for="visitorMessage">Your Message</label>
+            <textarea id="visitorMessage" name="message"
+                      rows="5" placeholder="Write your message here..."
+                      required></textarea>
+
+            <button class="primary-btn" type="submit">
+                Send Message
+            </button>
+        </form>
+
+        <div class="page-buttons">
+            <button class="secondary-btn" id="socialBackButton">
+                ← BACK
+            </button>
+            <button class="primary-btn" id="homeButton">
+                HOME
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>
+        Notice: This is my first website, created for practice
+        and learning. I believe I can continue improving it
+        with new skills, better designs, and more features
+        in the future.
+    </p>
+    <p>© 2026 Dursa Lechisa | My Learning Journey</p>
+</footer>
+
 </body>
 </html>
